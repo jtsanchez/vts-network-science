@@ -83,7 +83,7 @@ def draw_graph(G, affected_nodes=set(), removed_edges=set()):
     nx.draw_networkx_labels(G, label_pos, font_size=10, font_family='sans-serif', font_color="black", font_weight="bold")
     
     plt.axis('off')
-    ctx.add_basemap(ax, crs=gdf.crs.to_string(), source=ctx.providers.Stamen.Toner)
+    ctx.add_basemap(ax, crs=gdf.crs.to_string(), source=ctx.providers.Stamen.Watercolor)
 
     return plt
 
