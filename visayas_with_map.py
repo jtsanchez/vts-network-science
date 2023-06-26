@@ -115,7 +115,7 @@ if st.button("Line Tripped"):
 
     #-- DUs
     # filter affected DUs
-    affected_DUs = filtered_df[filtered_df['type']=='DU']
+    affected_DUs = filtered_df[filtered_df['type']=='DU'].drop_duplicates(subset=['Name']) #edited
     affected_DUs= affected_DUs[['Name','Short Name']].reset_index(drop=True)
     
     #get MW of affected DUs
