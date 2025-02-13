@@ -4,6 +4,6 @@ geopandas==0.13.2
 matplotlib==3.7.1
 momepy==0.6.0
 networkx==3.1
-pandas==2.0.1
+pandas==1.5.3
 streamlit==1.20.0
 openpyxl==3.1.2
